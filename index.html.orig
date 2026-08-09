@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafsa Idsaid — Full-Stack Web Developer</title>
+  <meta name="description" content="Hafsa Idsaid — Full-Stack Web Developer and Software Engineering student at 1337 (42 Network). Builds with PHP, Laravel, MySQL and JavaScript. Open to internships and full-time roles, remote or relocation.">
+  <meta name="author" content="Hafsa Idsaid">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hafsa Idsaid — Full-Stack Web Developer">
+  <meta property="og:description" content="Software Engineering student at 1337 (42 Network) building full-stack web applications with PHP, Laravel, MySQL and JavaScript.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hafsa-portrait.webp">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="nav__brand" aria-label="Hafsa Idsaid — home">HI<span>.</span></a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#education" data-nav>Education</a></li>
+        <li><a href="#community" data-nav>Community</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light theme">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+
+        <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__blob"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Software Engineering Student · 1337 (42 Network — UM6P)</p>
+
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="hero__name">Hafsa Idsaid</span>.
+            <span class="hero__role">I build full-stack web applications<span class="hero__dot">.</span></span>
+          </h1>
+
+          <p class="hero__lede reveal">
+            From database schema to pixel-perfect interface — I ship reliable, responsive
+            products with <strong>PHP · Laravel · MySQL</strong> on the back end and
+            <strong> modern JavaScript</strong> on the front. Currently based in Morocco,
+            looking for an internship or job — open to remote or happy to relocate.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="#projects" class="btn btn--primary">
+              <span>View my work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            {% comment %} <a href="assets/docs/Hafsa-Idsaid-Resume.pdf" class="btn btn--ghost" download>
+              <span>Download résumé</span>
+            </a> {% endcomment %}
+          </div>
+
+          <div class="hero__status reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to internships &amp; jobs · Remote or relocation
+          </div>
+        </div>
+
+        <div class="hero__portrait reveal">
+          <div class="portrait-frame">
+            <img src="assets/images/hafsa-portrait.webp" alt="Portrait of Hafsa Idsaid" width="480" height="600" loading="eager">
+          </div>
+          <div class="portrait-tag">
+            <span>1337</span> Rabat, Morocco
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v15M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__index reveal">01 / 07</p>
+        <h2 class="section__title reveal">About</h2>
+
+        <div class="about__grid">
+          <div class="about__copy reveal">
+            <p class="about__lead">A developer who ships, not just codes.</p>
+
+            <p>
+              I'm a Software Engineering student at <strong>1337 Coding School (42 Network — UM6P)</strong>
+              in Rabat, following a project-based, peer-to-peer curriculum — no lectures, just problems,
+              code reviews, and relentless debugging alongside other students.
+            </p>
+
+            <p>
+              Before that, I earned a <strong>Higher Technician Diploma in Computer Science</strong> from
+              EST, graduating with top marks after building a full e-commerce platform solo — from
+              database design to the admin dashboard.
+            </p>
+
+            <p>
+              Most recently, I completed a full-stack internship at <strong>Ejahiz</strong>, a web and
+              digital marketing agency, where I shipped three production websites — including a bus
+              ticketing platform with real payment integration — on real client deadlines instead of
+              academic ones.
+            </p>
+
+            <p>
+              I like the parts of engineering most people skip: reading someone else's code before
+              touching it, modeling a system with UML before writing a line, and making sure the seat
+              selection screen still works on a phone with a cracked screen. I'm looking for an
+              internship or job — remote or on-site, I'm happy to relocate — where I can keep doing
+              exactly that, alongside engineers who'll show me what I don't know yet.
+            </p>
+          </div>
+
+          <aside class="about__facts reveal" aria-label="Quick facts">
+            <ul>
+              <li>
+                <span class="about__facts-label">Location</span>
+                <span class="about__facts-value">Morocco · Remote or relocation</span>
+              </li>
+              <li>
+                <span class="about__facts-label">Currently</span>
+                <span class="about__facts-value">Year 2, Software Engineering @ 1337</span>
+              </li>
+              <li>
+                <span class="about__facts-label">Focus</span>
+                <span class="about__facts-value">Full-Stack Web Development</span>
+              </li>
+              <li>
+                <span class="about__facts-label">Languages</span>
+                <span class="about__facts-value">Arabic (Native)</span>
+                <span class="about__facts-value">French (Professional)</span>
+                <span class="about__facts-value">English (Professional, Technical)</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__index reveal">02 / 07</p>
+        <h2 class="section__title reveal">Skills &amp; Technologies</h2>
+        <p class="section__intro reveal">The tools I reach for most, grouped by where they live in the stack.</p>
+
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li>
+              <li>Bootstrap</li><li>Tailwind CSS</li><li>React.js <em>(in progress)</em></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <ul class="tag-list">
+              <li>PHP</li><li>Laravel</li><li>Python</li><li>MySQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Tools</h3>
+            <ul class="tag-list">
+              <li>Docker</li><li>Git</li><li>GitHub</li><li>Linux / Bash</li><li>UML</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Practices</h3>
+            <ul class="tag-list">
+              <li>MVC</li><li>OOP</li><li>Technical Documentation</li><li>Code Review</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section__index reveal">03 / 07</p>
+        <h2 class="section__title reveal">Experience</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3>Full-Stack Developer <span>— Final Year Internship (SFE)</span></h3>
+                <span class="timeline__date">2024</span>
+              </div>
+              <p class="timeline__org">Ejahiz · Agadir, Morocco</p>
+
+              <ul class="timeline__list">
+                <li>Designed and built <strong>Ejahiz Caisse</strong>, a bilingual (FR/EN) responsive
+                  marketing site for the company's POS product — owning both the visual design system
+                  and the Laravel implementation.</li>
+                <li>Modeled and built <strong>Go Bus</strong>, a bus-ticket booking platform, from UML
+                  use-case, sequence and class diagrams through to a working app with trip search, seat
+                  selection, PayPal checkout, e-tickets and an admin dashboard for routes and reservations.</li>
+                <li>Developed <strong>Manzakine</strong>, an e-commerce site for a copper-jewelry brand,
+                  focused on clean navigation and mobile UX.</li>
+              </ul>
+
+              <ul class="tag-list tag-list--compact">
+                <li>Laravel</li><li>MySQL</li><li>Tailwind CSS</li><li>JavaScript</li>
+                <li>PayPal API</li><li>UML</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3>Full-Stack Developer <span>— Graduation Project (PFE)</span></h3>
+                <span class="timeline__date">2024</span>
+              </div>
+              <p class="timeline__org">École Supérieure de Technologie (EST) · Morocco</p>
+
+              <ul class="timeline__list">
+                <li>Built a complete e-commerce platform solo — product catalogue, shopping cart, order
+                  management, user authentication and an admin panel.</li>
+                <li>Defended the project before an academic jury; awarded top marks.</li>
+              </ul>
+
+              <ul class="tag-list tag-list--compact">
+                <li>PHP</li><li>Laravel</li><li>MySQL</li><li>HTML/CSS/JS</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="section__index reveal">04 / 07</p>
+        <h2 class="section__title reveal">Projects</h2>
+        <p class="section__intro reveal">A few things I've designed, built and shipped end to end.</p>
+
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Cards are rendered by js/script.js from the PROJECTS data array -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section__index reveal">05 / 07</p>
+        <h2 class="section__title reveal">Education</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3>Software Engineering</h3>
+                <span class="timeline__date">Oct 2024 — Present</span>
+              </div>
+              <p class="timeline__org">1337 Coding School (42 Network — UM6P) · Rabat</p>
+              <p class="timeline__desc">
+                Peer-to-peer, project-based curriculum with no lectures — C, Algorithms, Unix and Web
+                Development. Currently in Year 2.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__head">
+                <h3>Higher Technician Diploma — Computer Science</h3>
+                <span class="timeline__date">2024</span>
+              </div>
+              <p class="timeline__org">École Supérieure de Technologie (EST) · Morocco</p>
+              <p class="timeline__desc">
+                Graduation project: PHP/Laravel e-commerce platform — top marks.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY ============ -->
+    <section class="section section--alt" id="community">
+      <div class="container">
+        <p class="section__index reveal">06 / 07</p>
+        <h2 class="section__title reveal">Community &amp; Events</h2>
+        <p class="section__intro reveal">
+          Outside coursework and client work, I show up for hackathons and campus events — it's
+          where I test ideas fast, pitch under pressure, and meet other builders.
+        </p>
+
+        <div class="events__grid">
+          <article class="event-card reveal">
+            <div class="event-card__preview">
+              <img src="assets/images/events/wdj-hackathon.webp" alt="Hafsa receiving a certificate of participation on stage at the 1337 WDJ hackathon" loading="lazy" width="900" height="737">
+            </div>
+            <div class="event-card__body">
+              <span class="event-card__badge">Hackathon · 1337</span>
+              <h3>1337 WDJ</h3>
+              <p>
+                An in-house hackathon at 1337, tasked with building a solution for fellow students.
+                Competed with my team, Warriors.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-card__preview">
+              <img src="assets/images/events/taqa-hackathon.webp" alt="Hafsa and her team presenting their project on stage at the TAQA hackathon" loading="lazy" width="900" height="600">
+            </div>
+            <div class="event-card__body">
+              <span class="event-card__badge">Hackathon · TAQA</span>
+              <h3>TAQA Hackathon</h3>
+              <p>
+                Four days building an anomaly-detection system for Taqa, classifying operational
+                alerts as critical or non-critical, then presenting our approach to the judges.
+              </p>
+            </div>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-card__preview">
+              <img src="assets/images/events/um6p-exhibition.webp" alt="Hafsa at the UM6P innovation exhibition in Benguerir" loading="lazy" width="900" height="674">
+            </div>
+            <div class="event-card__body">
+              <span class="event-card__badge">Exhibition · UM6P, Benguerir</span>
+              <h3>UM6P Innovation Exhibition</h3>
+              <p>
+                Explored VR and emerging-tech demos at UM6P's innovation showcase — always curious
+                about where hardware and software meet.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <p class="section__index reveal">07 / 07</p>
+        <h2 class="section__title reveal">Let's build something.</h2>
+        <p class="section__intro reveal">
+          I'm actively looking for an internship or job — remote, or happy to relocate — where I can
+          learn from experienced engineers and contribute to real products. If that's you — say hello.
+        </p>
+
+        <div class="contact__actions reveal">
+          <a href="mailto:hafsaidsaid.dev@gmail.com" class="magnetic-btn" id="magneticBtn">
+            <span>hafsaidsaid.dev@gmail.com</span>
+          </a>
+        </div>
+
+        <ul class="contact__links reveal">
+          <li>
+            <a href="https://github.com/hafsa-techno" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.26 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              <span>github.com/hafsa-techno</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+212722003295">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.32 1.85.55 2.81.68A2 2 0 0 1 22 16.9Z"/></svg>
+              <span>+212 722 003 295</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>Designed &amp; built by Hafsa Idsaid — HTML, CSS &amp; vanilla JavaScript. No frameworks.</p>
+      <p>&copy; <span id="year"></span> Hafsa Idsaid.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
